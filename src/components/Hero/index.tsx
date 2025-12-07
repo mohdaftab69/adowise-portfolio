@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
+              <div className="mx-auto py-4 max-w-[800px] text-center">
                 <motion.h1 
                   initial={{ filter: "blur(10px)", opacity: 0 }}
                   animate={isVisible ? { 
@@ -27,7 +27,7 @@ const Hero = () => {
                     opacity: 1 
                   } : {}}
                   transition={{ duration: 1, ease: "easeOut" }}
-                  className="mb-5 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white"
+                  className="mb-5 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight dark:text-white"
                 >
                   Transforming Ideas into Powerful Digital Products
                 </motion.h1>
@@ -38,14 +38,9 @@ const Hero = () => {
                     opacity: 1 
                   } : {}}
                   transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-                  className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed! sm:text-lg md:text-xl"
+                  className="text-body-color dark:text-body-color-dark mb-4 text-xs leading-relaxed! sm:text-xs md:text-lg"
                 >
-                  Adowise is a modern web agency specializing in building
-                  high-quality business websites, SaaS platforms, and custom
-                  Next.js applications. From clean UI to powerful backend
-                  systems — we create digital experiences that elevate your
-                  brand and grow your business.
-                </motion.p>
+Adowise builds clean, high-quality websites, SaaS platforms, and custom Next.js apps to grow your business.                </motion.p>
                 <motion.div 
                   initial={{ filter: "blur(10px)", opacity: 0 }}
                   animate={isVisible ? { 
@@ -53,7 +48,7 @@ const Hero = () => {
                     opacity: 1 
                   } : {}}
                   transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-                  className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
+                  className="flex flex-col items-center justify-center space-y-0 sm:flex-row sm:space-y-0 sm:space-x-4"
                 >
                   <Link
                     href="https://calendly.com/infomohdaftab/30min"

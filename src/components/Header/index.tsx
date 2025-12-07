@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import { useTheme } from "next-themes";
-
+import { ShinyButton } from "../ui/shiny-button";
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [logoClass, setLogoClass] = useState("");
@@ -38,7 +38,7 @@ const Header = () => {
       className={`header top-0 left-0 z-[9999] flex w-full items-center ${
         sticky
           ? "fixed shadow-sticky bg-white/10 dark:bg-black/10 backdrop-blur-lg transition-all"
-          : "absolute bg-transparent"
+          : "absolute "
       }`}
     >
       <div className="container">
@@ -94,7 +94,7 @@ const Header = () => {
 
             {/* NAV MENU */}
             <nav
-              className={`navbar  absolute right-0 z-30 w-[250px] rounded border px-6 py-4 duration-300 bg-white dark:border-white/10
+              className={`navbar  absolute right-0 z-30 w-[250px] rounded border px-6 py-4 duration-300 bg-white/10    backdrop-blur-xl  dark:border-white/10
               lg:static lg:w-auto lg:bg-transparent lg:border-none lg:p-0 lg:opacity-100 lg:visible
               ${
                 navbarOpen
@@ -156,9 +156,10 @@ const Header = () => {
 
               <Link
                 href="https://calendly.com/infomohdaftab/30min"
-                className="text-dark dark:text-white hover:opacity-70 px-4 py-2"
+                className=""
               >
-                Book Demo
+                              <ShinyButton children={"Book a Demo"}></ShinyButton>
+
               </Link>
 
               <ThemeToggler />
